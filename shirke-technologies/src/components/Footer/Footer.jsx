@@ -23,7 +23,7 @@ function Footer() {
 
                 <div className="footer-about">
 
-                    <img src={logo} alt="Shirke Technologies" />
+                    <img src={logo} alt="Logo - Shirke Technologies" />
 
                     <h2>Shirke TECHNOLOGIES</h2>
 

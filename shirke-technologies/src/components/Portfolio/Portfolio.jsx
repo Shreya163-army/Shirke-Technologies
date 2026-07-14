@@ -38,7 +38,7 @@ function Portfolio() {
 
                         </div>
 
-                        <img src={promax} alt="Promax Facility Website" />
+                        <img src={promax} alt="Preview - Promax Facility Website" />
 
                     </div>
 

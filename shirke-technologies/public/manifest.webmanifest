@@ -1,0 +1,16 @@
+{
+  "name": "Shirke Technologies",
+  "short_name": "Shirke",
+  "description": "Modern website development and custom web applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#2563EB",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}

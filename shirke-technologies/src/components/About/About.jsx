@@ -87,7 +87,7 @@ function About() {
                     <div className="founder-top">
 
                         <div className="founder-avatar">
-                            <img src={logo} alt="Shirke Technologies" />
+                            <img src={logo} alt="Shreya Shirke - Founder of Shirke Technologies" />
                         </div>
 
                         <div>

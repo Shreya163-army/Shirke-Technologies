@@ -2,6 +2,10 @@
    CONTACT SECTION
 =========================== */
 
+.contact *{
+    max-width:100%;
+}
+
 .contact{
     background:#030712;
     color:#fff;
@@ -65,6 +69,7 @@
 =========================== */
 
 .contact-container{
+    width:100%;
     display:grid;
     grid-template-columns:380px 1fr;
     gap:50px;
@@ -179,6 +184,9 @@
 =========================== */
 
 .contact-form{
+    width:100%;
+    max-width:100%;
+
     background:rgba(17,28,47,.85);
     border:1px solid rgba(255,255,255,.06);
     backdrop-filter:blur(18px);
@@ -188,6 +196,7 @@
     flex-direction:column;
     gap:22px;
     transition:.35s;
+    box-sizing:border-box;
 }
 
 .contact-form:hover{
@@ -377,18 +386,36 @@
 
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
+
+.contact{
+    padding:90px 20px;
+}
+
+.contact-container{
+    width:100%;
+    gap:30px;
+}
 
 .contact-form{
+    width:100%;
+    max-width:100%;
+    padding:22px;
+}
 
-    padding:25px;
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    width:100%;
+    font-size:16px;
+}
 
+.input-group{
+    grid-template-columns:1fr;
 }
 
 .contact-form button{
-
     width:100%;
-
 }
 
 }

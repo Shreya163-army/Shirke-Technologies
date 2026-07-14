@@ -6,6 +6,9 @@ import "./Navbar.css";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +25,7 @@ function Navbar() {
       <div className="container">
 
         <div className="logo">
-          <img src={logo} alt="Shirke Technologies" />
+          <img src={logo} alt="Logo - Shirke Technologies" />
           <div className="logo-text">
             <h2>Shirke</h2>
             <span>Technologies</span>
@@ -30,18 +33,17 @@ function Navbar() {
         </div>
 
         <ul className={menuOpen ? "nav-links active" : "nav-links"}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <a href="#home" onClick={closeMenu}>Home</a>
+          <a href="#services" onClick={closeMenu}>Services</a>
+          <a href="#portfolio" onClick={closeMenu}>Portfolio</a>
+          <a href="#pricing" onClick={closeMenu}>Pricing</a>
+          <a href="#about" onClick={closeMenu}>About</a>
+          <a href="#contact" onClick={closeMenu}>Contact</a>
 
           <a
-            className="quote-btn mobile"
             href="https://wa.me/918668961856"
-            target="_blank"
-            rel="noreferrer"
+            className="quote-btn mobile"
+            onClick={closeMenu}
           >
             Free Consultation
           </a>
@@ -52,6 +54,7 @@ function Navbar() {
           href="https://wa.me/918668961856"
           target="_blank"
           rel="noreferrer"
+          onClick={closeMenu}
         >
           Free Consultation
         </a>
